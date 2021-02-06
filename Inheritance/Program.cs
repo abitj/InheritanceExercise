@@ -6,34 +6,40 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+         
+          /*Create an object of your Bird class
+           give values to your members using the object of your Bird class
+           Creatively display the class member values */
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            Bird doveBird = new Bird()
+            {
+                Name = "ArialBek",
+                HasWings = true,
+                HasBackBone = true,
+                HasFeathers = true,
+                Type = "electric",
+            };
 
+            Console.WriteLine();
+            Console.WriteLine($"{doveBird.Name} has {doveBird.Legs} legs! It has wings? {doveBird.HasWings}. It also has backbone? {doveBird.HasBackBone}.");
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
 
             /*Create an object of your Reptile class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-        }
+             give values to your members using the object of your Bird class
+             Creatively display the class member values */
+
+            Reptile dragonFly = new Reptile() 
+            {
+                Name = "Angelfish",
+                HasScales = true,
+                IsColdBlooded = true,
+                LayEggs = true,
+         
+            }; 
+
+            Console.WriteLine();
+            Console.WriteLine($"{dragonFly.Name} which is {dragonFly.Age } years old has no scales on its body, true or false? {dragonFly.HasScales} ! It's a cold blooded animal, true or false? {dragonFly.IsColdBlooded}.");
+        } 
     }
-}
+} 
+
